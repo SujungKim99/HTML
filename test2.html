@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ball {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        animation: play 1s linear infinite alternate;
+      }
+
+      /* 
+        @keyframes play{
+            from{
+                top: 50px;
+            }
+            to{
+                top: 300px;
+            } */
+      @keyframes play {
+        0% {
+          top: 50px;
+          width: 105px;
+          height: 90px;
+        }
+        10% {
+          width: 100px;
+        }
+        90% {
+          width: 100px;
+        }
+        100% {
+          width: 105px;
+          height: 90px;
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>애니메이션</h1>
+
+    <div id="ball"></div>
+  </body>
+</html>
